@@ -1,0 +1,8 @@
+FROM ubuntu:22.04
+
+RUN apt-get update && \
+    apt-get install -y curl iputils-ping tcpdump && \
+    apt-get clean
+
+CMD curl http://servidor:80
+
