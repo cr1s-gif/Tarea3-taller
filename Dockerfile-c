@@ -4,5 +4,7 @@ RUN apt-get update && \
     apt-get install -y curl iputils-ping tcpdump && \
     apt-get clean
 
-CMD curl http://servidor:80
+CMD bash -c 'while true; do curl http://ServidorN2; sleep 10; done'
+
+
 
